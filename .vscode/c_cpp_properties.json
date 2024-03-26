@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/irobot/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/irobot/catkin_ws/src/hls_lfcd_lds_driver/include/**",
+        "/home/irobot/catkin_ws/src/practice_package/include/**",
+        "/home/irobot/catkin_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/irobot/catkin_ws/src/roboteq_control/include/**",
+        "/home/irobot/catkin_ws/src/serial/include/**",
+        "/home/irobot/catkin_ws/src/tinkerforge_imu_ros/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

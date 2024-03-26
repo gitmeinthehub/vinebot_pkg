@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Displaying the Navigation on Rviz 
+  <include file="$(find roboteq_control)/launch/display.launch" />
+    <arg default="$(find vinebot_description)/rviz/vinebot_rtabmap_rviz.rviz" name="rvizconfig"/>-->
+
+
+    <param command="$(find xacro)/xacro $(find vinebot_explore)/urdf/vinebot.xacro" name="robot_description"/>
+    
+    <node args="-param robot_description -urdf -model vinebot" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"/>
+
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+
+    <arg name="world_name" value="$(find vinebot_explore)/worlds/my_world.world" />
+
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+
+  </include>
+</launch>
